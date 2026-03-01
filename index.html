@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UsifAhmed</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+
+:root{
+  --bg:#1e1e2e;
+  --border:#313244;
+  --purple:#cba6f7;
+  --lavender:#b4befe;
+  --subtext:#a6adc8;
+  --muted:#6c7086;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:var(--bg);
+  color:white;
+  display:flex;
+  justify-content:center;
+  animation:fadeIn 0.8s ease;
+}
+
+main{
+  width:100%;
+  max-width:680px;
+  padding:40px 24px;
+}
+
+/* Typography */
+
+h1{
+  color:var(--purple);
+  font-size:2.4rem;
+  font-weight:600;
+}
+
+.role{
+  color:var(--subtext);
+  margin-top:6px;
+  font-size:0.95rem;
+}
+
+/* Bio */
+
+.bio{
+  margin-top:20px;
+  padding-left:14px;
+  border-left:3px solid var(--purple);
+  color:var(--subtext);
+  line-height:1.6;
+}
+
+/* Divider */
+
+hr{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:28px 0;
+}
+
+/* Section Title */
+
+h2{
+  font-size:1rem;
+  color:var(--lavender);
+  border-bottom:1px solid var(--border);
+  padding-bottom:6px;
+  margin-bottom:16px;
+}
+
+/* Links */
+
+.row{
+  display:flex;
+  align-items:center;
+  padding:6px 0;
+  gap:10px;
+  font-size:0.92rem;
+}
+
+.row::before{
+  content:"";
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--purple);
+}
+
+.row a{
+  color:var(--lavender);
+  text-decoration:none;
+  transition:0.25s;
+  padding:4px 0;
+}
+
+.row a:hover{
+  color:var(--purple);
+  text-shadow:0 0 8px rgba(203,166,247,0.4);
+}
+
+/* Footer */
+
+footer{
+  margin-top:50px;
+  text-align:center;
+  font-size:0.75rem;
+  color:var(--muted);
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<main>
+
+<h1>Youssef Ahmed</h1>
+<p class="role">
+An Open-Source Contributor, Software Engineer, and Arch Linux user, BTW!
+</p>
+
+<div class="bio">
+I'm Youssef Ahmed, a second year Computer Science student, passionate about open source contribution and learning more about technology.
+</div>
+
+<hr/>
+
+<h2>Links</h2>
+
+<div class="row">
+    <a href="https://codeforces.com/profile/BetterCallUssif" target="_blank">Codeforces</a>
+</div>
+
+<div class="row">
+<a href="https://github.com/usefahmed07" target="_blank">GitHub</a>
+</div>
+
+<div class="row">
+<a href="https://www.linkedin.com/in/usifahmed/" target="_blank">LinkedIn</a>
+</div>
+
+<div class="row">
+<a href="mailto:youssef.ahmed.hamaza@gmail.com">Email</a>
+</div>
+
+<footer>
+Youssef Ahmed © 2026 • All rights reserved
+</footer>
+
+</main>
+
+</body>
+</html>
